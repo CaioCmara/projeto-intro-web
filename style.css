@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ 
+  }
+ header{
+  color: white;
+  padding: 30px;
+  margin: -8px -8px 0;
+  padding: 25px 0 25px 0;
+  font-size: 20px;
+  text-align: center; 
+  color: #D6D6D6; 
+  border-bottom: 2px solid gray;
+  width: 100vw;
+  font-family: 'Quicksand', sans-serif;
+  
+ }
+ header:hover{
+  background: #16171f;
+  transition-timing-function: linear;
+  transition:  0.6s;
+  transform: scale(1.1);
+  
+} 
+
+#buscador{
+  width: 400px;
+  border-radius: 40px;
+  border: solid 4px rgb(186, 194, 195);
+}
+#buscador:hover{
+  width: 400px;
+  border-radius: 40px;
+  border: outset 4px rgb(186, 194, 195);
+  transform: scale(1.1);
+}
+
+#botao{
+  border-radius: 40px;
+  padding: 2px 15px 2px 15px;
+  border: outset 4px rgb(186, 194, 195);
+}
+#botao:hover{
+  border-radius: 40px;
+  padding: 2px 15px 2px 15px;
+  border: outset 4px rgb(186, 194, 195);
+  transform: scale(1.1);
+}
+h1{
+  animation: pulse 6s infinite;
+ 
+}
+    @keyframes pulse {
+        0% {
+            transform: scale(0.90);
+
+        }
+    
+        70% {
+            transform: scale(1.0);
+           
+        }
+    
+        100% {
+            transform: scale(0.90);
+           
+        }
+}
+ 
+ 
+  body{
+    display:flex;
+    flex-direction: column;
+    background: linear-gradient( rgba(0, 3, 22, 3.4), rgba(22, 210, 182, 0.1) ), url(/imagens/cosmere\ 1.png);
+    background-size: cover;
+    
+    
+  }
+ 
+ #cards{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  justify-content: center;
+  row-gap: 40px;
+   
+ }
+
+ ul{
+  list-style: none;
+  padding: 30px;
+  background-color: rgba(6, 5, 10, 0.535);
+  font-size: 16px;
+  color: white;
+  border: white inset 3px;
+  border-radius: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+  h2{
+    color: white;
+    margin-top: 80px;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  footer{
+    margin-top: 20px;
+    color: white;
+    background: #16171f;
+    padding: 17px;
+    text-align: center;
+  }
+
+  #footer-texto{
+    margin-bottom: 10px;
+  }
+
+    #footer-icone{
+      margin-left: 10px;
+  }
+
+    
+  
+  @media screen and (min-device-width : 1200px) {
+ ul:hover{
+  transition-timing-function: linear;
+  transition:  0.6s;
+  transform: scale(1.4);
+  background-color: #e5e4e2  ;
+  color: black;
+  border: black inset 4px;
+ 
+ }
+
+ ul:hover .imagens{
+ 
+  border: 2px outset rgb(227, 237, 151);
+ }
+ 
+ 
+ ul:hover .nomes{
+ background-color:  #e4e2e5;
+ border-bottom: none;
+ }
+ 
+ul:hover .numero{
+  display: block;
+}
+ul:hover .vivo{
+  display: block;
+}
+ul:hover .atributo{
+  display: block;
+}
+ 
+li.nomes{
+ 
+  margin-top: 0;
+  margin-bottom: 8px;
+  text-align: center;
+  font-size: 25px;
+  border-bottom: rgb(76, 79, 63) inset 2px;
+   
+}
+
+li.numero{
+  display: none;
+}
+
+li.vivo{
+  display: none;
+}
+li.atributo{
+  display: none;
+}
+
+ 
+}
+@media screen and (min-device-width : 481px) and (max-device-width:820px) {
+
+  ul:hover{
+    background-color: #e5e4e2;
+    color: black;
+  }
+  
+
+}
+@media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  ul:hover{
+    background-color: #e5e4e2;
+    color: black;
+    transition-timing-function: linear;
+  transition:  0.6s;
+  transform: scale(1.1);
+  }
+
+  #cards{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 9px;
+    float: right;
+  }
+}
